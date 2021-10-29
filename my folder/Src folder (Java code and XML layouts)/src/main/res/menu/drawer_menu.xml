@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/staffID"
+            android:title="Staff details" />
+
+    </group>
+    <item android:title="others" />
+
+    <group android:checkableBehavior="single">
+
+        <menu>
+            <item
+                android:id="@+id/Logout"
+                android:title="Logout" />
+            <item
+                android:id="@+id/logCustomer"
+                android:title="Login as a customer" />
+        </menu>
+    </group>
+
+</menu>

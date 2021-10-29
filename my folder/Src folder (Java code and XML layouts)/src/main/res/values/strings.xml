@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">ROT</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="next">Next</string>
+    <string name="rot">ROT</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer </string>
+    <string name="navigation_drawer_close">Close navigation drawer </string>
+
+    <string name="navigation_drawer_open2">Open navigation drawer </string>
+    <string name="navigation_drawer_close2">Close navigation drawer </string>
+
+    <string-array name="Orders">
+        <item>Order 1</item>
+        <item>Order 2</item>
+        <item>Order 3</item>
+        <item>Order 4</item>
+        <item>Order 5</item>
+        <item>Order 6</item>
+        <item>Order 7</item>
+        <item>Order 8</item>
+        <item>Order 9</item>
+        <item>Order 10</item>
+    </string-array>
+    <string-array name="Time_of_Creation">
+        <item>Time 1</item>
+        <item>Time 2</item>
+        <item>Time 3</item>
+        <item>Time 4</item>
+        <item>Time 5</item>
+        <item>Time 6</item>
+        <item>Time 7</item>
+        <item>Time 8</item>
+        <item>Time 9</item>
+        <item>Time 10</item>
+    </string-array>
+
+    <string-array name="Menu_Item">
+        <item>Menu Item 1</item>
+        <item>Menu Item 2</item>
+        <item>Menu Item 3</item>
+        <item>Menu Item 4</item>
+        <item>Menu Item 5</item>
+        <item>Menu Item 6</item>
+        <item>Menu Item 7</item>
+        <item>Menu Item 8</item>
+        <item>Menu Item 9</item>
+        <item>Menu Item 10</item>
+    </string-array>
+    <string-array name="Cost">
+        <item>Cost 1</item>
+        <item>Cost 2</item>
+        <item>Cost 3</item>
+        <item>Cost 4</item>
+        <item>Cost 5</item>
+        <item>Cost 6</item>
+        <item>Cost 7</item>
+        <item>Cost 8</item>
+        <item>Cost 9</item>
+        <item>Cost 10</item>
+    </string-array>
+    <string-array name="Description">
+        <item>Description 1</item>
+        <item>Description 2</item>
+        <item>Description 3</item>
+        <item>Description 4</item>
+        <item>Description 5</item>
+        <item>Description 6</item>
+        <item>Description 7</item>
+        <item>Description 8</item>
+        <item>Description 9</item>
+        <item>Description 10</item>
+    </string-array>
+
+    <string-array name="Active_Orders">
+        <item>Active Order 1</item>
+        <item>Active Order 2</item>
+        <item>Active Order 3</item>
+        <item>Active Order 4</item>
+        <item>Active Order 5</item>
+        <item>Active Order 6</item>
+        <item>Active Order 7</item>
+        <item>Active Order 8</item>
+        <item>Active Order 9</item>
+        <item>Active Order 10</item>
+    </string-array>
+    <string-array name="Access_Specifier">
+        <item>Staff</item>
+        <item>Customer</item>
+    </string-array>
+</resources>

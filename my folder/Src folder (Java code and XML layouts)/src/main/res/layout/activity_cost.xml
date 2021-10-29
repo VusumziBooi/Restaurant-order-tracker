@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_turquoise_color"
+    tools:context=".Cost">
+
+    <TextView
+        android:id="@+id/CostPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FFF"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView_cost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SP_View"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <View
+        android:id="@+id/SP_View"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.000" />
+
+    <View
+        android:id="@+id/OV_View"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.000" />
+
+    <TextView
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/OV_View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.783"
+        app:layout_constraintStart_toEndOf="@+id/OV_View2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <View
+        android:id="@+id/OV_View4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_restaurant_24_px_white"
+        app:layout_constraintBottom_toBottomOf="@+id/OV_View2"
+        app:layout_constraintEnd_toEndOf="@+id/OV_View2"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/OV_View2"
+        app:layout_constraintTop_toTopOf="@+id/OV_View2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/OV_View3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:text="@string/rot"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/OV_View2"
+        app:layout_constraintEnd_toEndOf="@+id/OV_View2"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/OV_View2"
+        app:layout_constraintTop_toTopOf="@+id/OV_View2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/OV_View2"
+        android:layout_width="100dp"
+        android:layout_height="85dp"
+        app:layout_constraintBottom_toBottomOf="@+id/OV_View"
+        app:layout_constraintEnd_toEndOf="@+id/OV_View"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/OV_View"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_cost"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OV_View3"
+        app:layout_constraintVertical_bias="0.262" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:onClick="doMenu"
+        android:text="Done"
+        android:textColor="#83EDC7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SP_View"
+        app:layout_constraintVertical_bias="0.898" />
+
+    <TextView
+        android:id="@+id/Overall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overall Cost :"
+        android:textColor="#FFF"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView_cost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SP_View"
+        app:layout_constraintVertical_bias="0.476" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

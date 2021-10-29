@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_turquoise_color"
+    android:id="@+id/drawer_layout2"
+    android:fitsSystemWindows="true"
+    tools:context=".Staff_order_screen"
+    tools:openDrawer="start">
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view_2"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        android:layout_gravity="start">
+    </com.google.android.material.navigation.NavigationView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:id="@+id/SP_View"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:id="@+id/SP_View4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_restaurant_24_px_white"
+            app:layout_constraintBottom_toBottomOf="@+id/SP_View2"
+            app:layout_constraintEnd_toEndOf="@+id/SP_View2"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/SP_View2"
+            app:layout_constraintTop_toTopOf="@+id/SP_View2"
+            app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/SP_View3"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/rot"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/SP_View2"
+            app:layout_constraintEnd_toEndOf="@+id/SP_View2"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/SP_View2"
+            app:layout_constraintTop_toTopOf="@+id/SP_View2"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <View
+            android:id="@+id/SP_View2"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+            app:layout_constraintBottom_toBottomOf="@+id/SP_View"
+            app:layout_constraintEnd_toEndOf="@+id/SP_View"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/SP_View"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="630dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SP_View"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CS_View"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="UnknownId" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

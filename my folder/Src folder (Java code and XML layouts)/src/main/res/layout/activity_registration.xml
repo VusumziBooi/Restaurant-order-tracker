@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <View
+        android:id="@+id/reg_next_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_wave_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <View
+        android:id="@+id/reg_next_view4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_restaurant_24_px_white"
+        app:layout_constraintBottom_toBottomOf="@+id/reg_next_view2"
+        app:layout_constraintEnd_toEndOf="@+id/reg_next_view2"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/reg_next_view2"
+        app:layout_constraintTop_toTopOf="@+id/reg_next_view2"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/reg_next_view3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="ROT"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/reg_next_view2"
+        app:layout_constraintEnd_toEndOf="@+id/reg_next_view2"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/reg_next_view2"
+        app:layout_constraintTop_toTopOf="@+id/reg_next_view2"
+        app:layout_constraintVertical_bias="1.0" />
+    <View
+        android:id="@+id/reg_next_view2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/reg_next_view"
+        app:layout_constraintEnd_toEndOf="@+id/reg_next_view"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/reg_next_view"
+        app:layout_constraintTop_toTopOf="@+id/reg_next_view"
+        app:layout_constraintVertical_bias="0.0" />
+    <EditText
+        android:id="@+id/rgtUsername"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_next_view"
+        app:layout_constraintVertical_bias="0.254"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <EditText
+        android:id="@+id/rgtEmail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_next_view"
+        app:layout_constraintVertical_bias="0.389"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <EditText
+        android:id="@+id/rgtPhoneNum"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_next_view"
+        app:layout_constraintVertical_bias="0.519" />
+
+
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="@drawable/custom_button_turquoise"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="doNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_next_view"
+        app:layout_constraintVertical_bias="0.742" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
